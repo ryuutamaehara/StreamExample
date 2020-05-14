@@ -1,7 +1,7 @@
 public class Cat implements Animal {
 
-    @Override
-    public String cry() {
-        return "meow";
-    }
+  @Override
+  public String cry() {
+    return "meow";
+  }
 }

@@ -1,3 +1,4 @@
 public interface Animal {
-    String cry();
+
+  String cry();
 }

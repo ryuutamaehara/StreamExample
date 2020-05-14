@@ -5,10 +5,10 @@ import java.util.stream.Stream;
  */
 public class Main10 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        Stream.of("switch", "switch", "ps4", "ps4")
-                .distinct()
-                .forEach(System.out::println);
-    }
+    Stream.of("switch", "switch", "ps4", "ps4")
+        .distinct()
+        .forEach(System.out::println);
+  }
 }

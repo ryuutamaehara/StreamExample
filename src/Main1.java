@@ -6,16 +6,16 @@ import java.util.Arrays;
  */
 public class Main1 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        // ①Data Sourceを準備する
-        var list = new ArrayList<String>(
-                Arrays.asList("bat", "spider", "america", "iron", "joker", "hulk"));
+    // ①Data Sourceを準備する
+    var list = new ArrayList<String>(
+        Arrays.asList("bat", "spider", "america", "iron", "joker", "hulk"));
 
-        // ②ストリームを作る
-        list.stream().
-                filter(s -> s.length() > 5).         // ③中間処理を行う　returnはいずれもStream<T>
-                map(String::toUpperCase).
-                forEach(System.out::println);        // ④終端処理を行う        // 結果：SPIDER,AMERICA
-    }
+    // ②ストリームを作る
+    list.stream().
+        filter(s -> s.length() > 5).         // ③中間処理を行う　returnはいずれもStream<T>
+        map(String::toUpperCase).
+        forEach(System.out::println);        // ④終端処理を行う        // 結果：SPIDER,AMERICA
+  }
 }

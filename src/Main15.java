@@ -5,14 +5,14 @@ import java.util.stream.Stream;
  */
 public class Main15 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        //true
-        System.out.println(Stream.of("switch", "ps4", "pc")
+    //true
+    System.out.println(Stream.of("switch", "ps4", "pc")
         .noneMatch((s -> s.length() > 6)));
 
-        //false
-        System.out.println(Stream.of("switch", "ps4", "pc")
-                .noneMatch((s -> s.length() > 1)));
-    }
+    //false
+    System.out.println(Stream.of("switch", "ps4", "pc")
+        .noneMatch((s -> s.length() > 1)));
+  }
 }

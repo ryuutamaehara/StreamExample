@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,9 +6,9 @@ import java.util.List;
  */
 public class Main2 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        //StreamAPIを使わない場合
+    //StreamAPIを使わない場合
 //        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
 //        for (Integer i : integerList) {
 //            if (i % 2 == 0) {
@@ -17,16 +16,16 @@ public class Main2 {
 //            }
 //        }
 
-        //StreamAPIを使う場合
-        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
-        integerList.stream() // streamの取得
-                .filter(i -> i % 2 == 0) // 中間操作
-                .forEach(i -> System.out.println(i)); // 終端操作
+    //StreamAPIを使う場合
+    List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
+    integerList.stream() // streamの取得
+        .filter(i -> i % 2 == 0) // 中間操作
+        .forEach(i -> System.out.println(i)); // 終端操作
 
-        //メッソドチェインを使わない場合
+    //メッソドチェインを使わない場合
 //        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
 //        Stream<Integer> stream = integerList.stream(); // streamの取得
 //        Stream<Integer> stream2 = stream.filter(i -> i % 2 == 0); // 中間操作
 //        stream2.forEach(i -> System.out.println(i)); // 終端操作
-    }
+  }
 }
