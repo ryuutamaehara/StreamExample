@@ -13,9 +13,9 @@ public class Main1 {
         Arrays.asList("bat", "spider", "america", "iron", "joker", "hulk"));
 
     // ②ストリームを作る
-    list.stream().
-        filter(s -> s.length() > 5).         // ③中間処理を行う　returnはいずれもStream<T>
-        map(String::toUpperCase).
-        forEach(System.out::println);        // ④終端処理を行う        // 結果：SPIDER,AMERICA
+    list.stream()
+        .filter(s -> s.length() > 5)
+        .map(String::toUpperCase)           // ③中間処理を行う　returnはいずれもStream<T>
+        .forEach(System.out::println);        // ④終端処理を行う        // 結果：SPIDER,AMERICA
   }
 }
